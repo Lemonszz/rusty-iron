@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "rusted-iron:lightly_weathered_cut_iron_block"
+    },
+    {
+      "item": "minecraft:honeycomb"
+    }
+  ],
+  "result": {
+    "item": "rusted-iron:waxed_lightly_weathered_cut_iron_block"
+  }
+}

@@ -1,35 +1,30 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "rusted-iron",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Rusted Iron",
+  "description": "Iron gets a bit rusty.",
   "authors": [
-    "Me!"
+    "LASER KNIGHTS"
   ],
-  "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
-  },
-
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT",
+  "icon": "assets/rusted-iron/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "party.lemons.rusted_iron.RustedIron"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "rusted-iron.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.7.4",
     "fabric": "*",
-    "minecraft": "1.16.x"
+    "minecraft": "1.17.x"
   },
   "suggests": {
     "another-mod": "*"

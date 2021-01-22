@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "rusted-iron:block/weathered_cut_iron_slab"
+    },
+    "type=double": {
+      "model": "rusted-iron:block/weathered_cut_iron_block"
+    },
+    "type=top": {
+      "model": "rusted-iron:block/weathered_cut_iron_slab_top"
+    }
+  }
+}

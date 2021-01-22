@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "rusted-iron:waxed_cut_iron_block"
+    }
+  },
+  "result": {
+    "item": "rusted-iron:waxed_cut_iron_stairs",
+    "count": 4
+  }
+}
