@@ -1,4 +1,5 @@
 {
+  "block.rusted-iron.lightly_weathered_iron_block": "Lightly Weathered Block of Iron",
   "block.rusted-iron.semi_weathered_iron_block": "Semi-Weathered Block of Iron",
   "block.rusted-iron.weathered_iron_block": "Weathered Block of Iron",
   "block.rusted-iron.cut_iron_block": "Cut Block of Iron",
@@ -14,6 +15,8 @@
   "block.rusted-iron.semi_weathered_cut_iron_slab": "Semi-Weathered Cut Iron Slab",
   "block.rusted-iron.lightly_weathered_cut_iron_slab": "Lightly Weathered Cur Iron SLab",
   "block.rusted-iron.lightly_weathered_iron_stairs": "Lightly Weathered Iron Stairs",
+  "block.rusted-iron.weathered_iron_stairs": "Weathered Iron Stairs",
+  "block.rusted-iron.weathered_cut_iron_stairs": "Weathered Cut Iron Stairs",
   "block.rusted-iron.semi_weathered_iron_stairs": "Semi-Weathered Iron Stairs",
   "block.rusted-iron.iron_stairs": "Iron Stairs",
   "block.rusted-iron.cut_iron_stairs": "Cut Iron Stairs",

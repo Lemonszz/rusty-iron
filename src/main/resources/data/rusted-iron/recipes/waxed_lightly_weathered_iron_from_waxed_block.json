@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "rusted-iron:waxed_lightly_weathered_iron_block"
+    }
+  },
+  "result": {
+    "item": "rusted-iron:waxed_lightly_weathered_iron_block",
+    "count": 4
+  }
+}

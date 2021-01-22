@@ -109,10 +109,12 @@ public class RustedIron implements ModInitializer
 
 		Registry.register(Registry.BLOCK, new Identifier("rusted-iron", "lightly_weathered_iron_stairs"), LIGHTLY_WEATHERED_IRON_STAIRS);
 		Registry.register(Registry.BLOCK, new Identifier("rusted-iron", "semi_weathered_iron_stairs"), SEMI_WEATHERED_IRON_STAIRS);
+		Registry.register(Registry.BLOCK, new Identifier("rusted-iron", "weathered_iron_stairs"), WEATHERED_IRON_STAIRS);
 		Registry.register(Registry.BLOCK, new Identifier("rusted-iron", "iron_stairs"), IRON_STAIRS);
 
 		Registry.register(Registry.BLOCK, new Identifier("rusted-iron", "cut_iron_stairs"), CUT_IRON_STAIRS);
 		Registry.register(Registry.BLOCK, new Identifier("rusted-iron", "semi_weathered_cut_iron_stairs"), SEMI_WEATHERED_CUT_IRON_STAIRS);
+		Registry.register(Registry.BLOCK, new Identifier("rusted-iron", "weathered_cut_iron_stairs"), WEATHERED_CUT_IRON_STAIRS);
 		Registry.register(Registry.BLOCK, new Identifier("rusted-iron", "lightly_weathered_cut_iron_stairs"), LIGHTLY_WEATHERED_CUT_IRON_STAIRS);
 
 		Registry.register(Registry.ITEM, new Identifier("rusted-iron", "lightly_weathered_iron_stairs"), new BlockItem(LIGHTLY_WEATHERED_IRON_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
@@ -172,13 +174,5 @@ public class RustedIron implements ModInitializer
 		Registry.register(Registry.ITEM, new Identifier("rusted-iron", "waxed_cut_iron_stairs"), new BlockItem(WAXED_CUT_IRON_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 		Registry.register(Registry.ITEM, new Identifier("rusted-iron", "waxed_semi_weathered_cut_iron_stairs"), new BlockItem(WAXED_SEMI_WEATHERED_CUT_IRON_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 		Registry.register(Registry.ITEM, new Identifier("rusted-iron", "waxed_lightly_weathered_cut_iron_stairs"), new BlockItem(WAXED_LIGHTLY_WEATHERED_CUT_IRON_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-
-		StringBuilder s = new StringBuilder();
-		Registry.BLOCK.forEach(b->{
-			if(b.getTranslationKey().contains("rusted-iron"))
-				s.append("\"" + Registry.BLOCK.getId(b) + "\",\n");
-		});
-
-		System.out.println(s.toString());
 	}
 }
