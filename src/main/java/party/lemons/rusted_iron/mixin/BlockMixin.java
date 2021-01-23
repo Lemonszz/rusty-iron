@@ -8,9 +8,6 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import party.lemons.rusted_iron.RustedIron;
 
 import java.util.Random;
@@ -35,23 +32,27 @@ public abstract class BlockMixin extends AbstractBlock
 	@Override
 	public void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean notify) {
 		super.onBlockAdded(state, world, pos, oldState, notify);
-		this.scheduleOxidation(world, (Block)(Object)this, pos);
+
+		if((Object)this == Blocks.IRON_BLOCK)
+		{
+			this.scheduleIronOxidation(world, (Block) (Object) this, pos);
+		}
 	}
 
-	public int getOxidationTime(Random random) {
+	public int getIronOxyTime(Random random) {
 		return 1200000 + random.nextInt(768000);
 	}
 
-	public BlockState getOxidationResult(BlockState state)
+	public BlockState getIronOxyResult(BlockState state)
 	{
 		return RustedIron.LIGHTLY_WEATHERED_IRON_BLOCK.getDefaultState();
 	}
 
-	public void scheduleOxidation(World world, Block block, BlockPos pos) {
-		world.getBlockTickScheduler().schedule(pos, block, this.getOxidationTime(world.getRandom()));
+	public void scheduleIronOxidation(World world, Block block, BlockPos pos) {
+		world.getBlockTickScheduler().schedule(pos, block, this.getIronOxyTime(world.getRandom()));
 	}
 
 	public void oxidize(World world, BlockState state, BlockPos pos) {
-		world.setBlockState(pos, this.getOxidationResult(state));
+		world.setBlockState(pos, this.getIronOxyResult(state));
 	}
 }
