@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "rusted-iron:semi_weathered_iron_block",
+    "rusted-iron:lightly_weathered_iron_block",
     "rusted-iron:weathered_iron_block",
     "rusted-iron:cut_iron_block",
     "rusted-iron:weathered_cut_iron_block",
