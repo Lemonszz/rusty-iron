@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "rusted-iron:block/semi-weathered_iron_block"
-  }
-}

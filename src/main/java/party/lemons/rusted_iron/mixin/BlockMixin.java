@@ -45,7 +45,7 @@ public abstract class BlockMixin extends AbstractBlock
 
 	public BlockState getIronOxyResult(BlockState state)
 	{
-		return RustedIron.LIGHTLY_WEATHERED_IRON_BLOCK.getDefaultState();
+		return RustedIron.EXPOSED_WEATHERED_IRON_BLOCK.getDefaultState();
 	}
 
 	public void scheduleIronOxidation(World world, Block block, BlockPos pos) {

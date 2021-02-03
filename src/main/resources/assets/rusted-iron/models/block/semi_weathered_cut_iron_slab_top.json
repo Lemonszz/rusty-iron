@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "rusted-iron:block/semi-weathered_cut_iron_block",
-    "top": "rusted-iron:block/semi-weathered_cut_iron_block",
-    "side": "rusted-iron:block/semi-weathered_cut_iron_block"
-  }
-}
