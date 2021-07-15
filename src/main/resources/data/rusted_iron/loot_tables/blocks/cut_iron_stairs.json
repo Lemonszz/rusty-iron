@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "rusted-iron:cut_iron_stairs"
+          "name": "rusted_iron:cut_iron_stairs"
         }
       ],
       "conditions": [

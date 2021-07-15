@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "rusted-iron",
+  "id": "rusted_iron",
   "version": "${version}",
 
   "name": "Rusted Iron",
@@ -9,7 +9,7 @@
     "LASER KNIGHTS"
   ],
   "license": "MIT",
-  "icon": "assets/rusted-iron/icon.png",
+  "icon": "assets/rusted_iron/icon.png",
 
   "environment": "*",
   "entrypoints": {
@@ -18,7 +18,7 @@
     ]
   },
   "mixins": [
-    "rusted-iron.mixins.json"
+    "rusted_iron.mixins.json"
   ],
 
   "depends": {

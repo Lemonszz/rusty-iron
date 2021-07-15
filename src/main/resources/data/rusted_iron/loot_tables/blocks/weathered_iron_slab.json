@@ -12,7 +12,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:block_state_property",
-                  "block": "rusted-iron:weathered_iron_slab",
+                  "block": "rusted_iron:weathered_iron_slab",
                   "properties": {
                     "type": "double"
                   }
@@ -24,7 +24,7 @@
               "function": "minecraft:explosion_decay"
             }
           ],
-          "name": "rusted-iron:weathered_iron_slab"
+          "name": "rusted_iron:weathered_iron_slab"
         }
       ]
     }

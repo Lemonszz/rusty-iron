@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "rusted-iron:exposed_iron_stairs"
+          "name": "rusted_iron:exposed_iron_stairs"
         }
       ],
       "conditions": [

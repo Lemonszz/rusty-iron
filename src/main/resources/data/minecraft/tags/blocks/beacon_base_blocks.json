@@ -1,18 +1,18 @@
 {
   "replace": false,
   "values": [
-    "rusted-iron:weathered_iron_block",
-    "rusted-iron:exposed_iron_block",
-    "rusted-iron:rusted_iron_block",
-    "rusted-iron:cut_iron_block",
-    "rusted-iron:rusted_cut_iron_block",
-    "rusted-iron:weathered_cut_iron_block",
-    "rusted-iron:exposed_cut_iron_block",
-    "rusted-iron:waxed_exposed_iron_block",
-    "rusted-iron:waxed_weathered_iron_block",
-    "rusted-iron:waxed_iron_block",
-    "rusted-iron:waxed_cut_iron_block",
-    "rusted-iron:waxed_weathered_cut_iron_block",
-    "rusted-iron:waxed_exposed_cut_iron_block"
+    "rusted_iron:weathered_iron",
+    "rusted_iron:exposed_iron",
+    "rusted_iron:rusted_iron",
+    "rusted_iron:cut_iron",
+    "rusted_iron:rusted_cut_iron",
+    "rusted_iron:weathered_cut_iron",
+    "rusted_iron:exposed_cut_iron",
+    "rusted_iron:waxed_exposed_iron",
+    "rusted_iron:waxed_weathered_iron",
+    "rusted_iron:waxed_iron_block",
+    "rusted_iron:waxed_cut_iron",
+    "rusted_iron:waxed_weathered_cut_iron",
+    "rusted_iron:waxed_exposed_cut_iron"
   ]
 }

@@ -1,13 +1,13 @@
 {
   "variants": {
     "type=bottom": {
-      "model": "rusted-iron:block/rusted_cut_iron_slab"
+      "model": "rusted_iron:block/rusted_cut_iron_slab"
     },
     "type=double": {
-      "model": "rusted-iron:block/rusted_cut_iron_block"
+      "model": "rusted_iron:block/rusted_cut_iron"
     },
     "type=top": {
-      "model": "rusted-iron:block/rusted_cut_iron_slab_top"
+      "model": "rusted_iron:block/rusted_cut_iron_slab_top"
     }
   }
 }

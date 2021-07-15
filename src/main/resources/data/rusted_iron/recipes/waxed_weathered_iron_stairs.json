@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "rusted-iron:waxed_weathered_iron_block"
+      "item": "rusted_iron:waxed_weathered_iron_block"
     }
   },
   "result": {
-    "item": "rusted-iron:waxed_weathered_iron_stairs",
+    "item": "rusted_iron:waxed_weathered_iron_stairs",
     "count": 4
   }
 }

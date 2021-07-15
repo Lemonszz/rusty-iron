@@ -5,11 +5,11 @@
   ],
   "key": {
     "#": {
-      "item": "rusted-iron:waxed_exposed_iron_block"
+      "item": "rusted_iron:waxed_exposed_iron_block"
     }
   },
   "result": {
-    "item": "rusted-iron:waxed_exposed_iron_slab",
+    "item": "rusted_iron:waxed_exposed_iron_slab",
     "count": 6
   }
 }

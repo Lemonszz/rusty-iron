@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "rusted-iron:exposed_cut_iron_slab"
+      "item": "rusted_iron:exposed_cut_iron_slab"
     },
     {
       "item": "minecraft:honeycomb"
     }
   ],
   "result": {
-    "item": "rusted-iron:waxed_exposed_cut_iron_slab"
+    "item": "rusted_iron:waxed_exposed_cut_iron_slab"
   }
 }

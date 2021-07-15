@@ -2,9 +2,12 @@
   "required": true,
   "minVersion": "0.8",
   "package": "party.lemons.rusted_iron.mixin",
-  "compatibilityLevel": "JAVA_8",
+  "compatibilityLevel": "JAVA_16",
   "mixins": [
-    "BlockMixin"
+    "AxeMixin",
+    "HoneycombMixin",
+    "ReplaceIronBlockMixin",
+    "LightningMixin"
   ],
   "client": [
 

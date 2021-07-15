@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "rusted-iron:waxed_weathered_cut_iron_block"
+          "name": "rusted_iron:waxed_weathered_cut_iron_block"
         }
       ],
       "conditions": [

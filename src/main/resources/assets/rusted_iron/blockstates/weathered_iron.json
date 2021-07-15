@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "rusted-iron:block/weathered_iron_block"
+      "model": "rusted_iron:block/weathered_iron"
     }
   }
 }
