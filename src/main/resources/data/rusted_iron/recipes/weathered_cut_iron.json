@@ -6,11 +6,11 @@
   ],
   "key": {
     "#": {
-      "item": "rusted_iron:weathered_iron_block"
+      "item": "rusted_iron:weathered_iron"
     }
   },
   "result": {
-    "item": "rusted_iron:weathered_cut_iron_block",
+    "item": "rusted_iron:weathered_cut_iron",
     "count": 4
   }
 }

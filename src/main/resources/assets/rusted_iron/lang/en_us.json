@@ -1,43 +1,62 @@
 {
-  "block.rusted_iron.exposed_iron_block": "Exposed Block of Iron",
-  "block.rusted_iron.weathered_iron_block": "Weathered Block of Iron",
-  "block.rusted_iron.cut_iron_block": "Cut Block of Iron",
-  "block.rusted_iron.weathered_cut_iron_block": "Weathered Cut Block of Iron",
-  "block.rusted_iron.exposed_cut_iron_block": "Exposed Cut Block of Iron",
+  "block.rusted_iron.exposed_iron": "Exposed Iron",
+  "block.rusted_iron.weathered_iron": "Weathered Iron",
+  "block.rusted_iron.rusted_iron": "Rusted Iron",
+  
+  "block.rusted_iron.cut_iron": "Cut Iron",
+  "block.rusted_iron.exposed_cut_iron": "Exposed Cut Iron",
+  "block.rusted_iron.weathered_cut_iron": "Weathered Cut Iron",
+  "block.rusted_iron.rusted_cut_iron": "Rusted Cut Iron",
+ 
+  "block.rusted_iron.iron_slab": "Iron Slab",
   "block.rusted_iron.exposed_iron_slab": "Exposed Iron Slab",
   "block.rusted_iron.weathered_iron_slab": "Weathered Iron Slab",
-  "block.rusted_iron.iron_slab": "Iron Slab",
+  "block.rusted_iron.rusted_iron_slab": "Rusted Iron Slab",
+ 
   "block.rusted_iron.cut_iron_slab": "Cut Iron Slab",
+  "block.rusted_iron.exposed_cut_iron_slab": "Exposed Cut Iron Slab",
   "block.rusted_iron.weathered_cut_iron_slab": "Weathered Cut Iron Slab",
-  "block.rusted_iron.exposed_cut_iron_slab": "Exposed Cut Iron SLab",
+  "block.rusted_iron.rusted_cut_iron_slab": "Rusted Cut Iron Slab",
+
+  "block.rusted_iron.iron_stairs": "Iron Stairs",
   "block.rusted_iron.exposed_iron_stairs": "Exposed Iron Stairs",
   "block.rusted_iron.weathered_iron_stairs": "Weathered Iron Stairs",
-  "block.rusted_iron.iron_stairs": "Iron Stairs",
+  "block.rusted_iron.rusted_iron_stairs": "Rusted Iron Stairs",
+
+
   "block.rusted_iron.cut_iron_stairs": "Cut Iron Stairs",
-  "block.rusted_iron.weathered_cut_iron_stairs": "Weathered Cut Iron Stairs",
   "block.rusted_iron.exposed_cut_iron_stairs": "Exposed Cut Iron Stairs",
-  "block.rusted_iron.waxed_exposed_iron_block": "Waxed Exposed Block of Iron",
-  "block.rusted_iron.waxed_weathered_iron_block": "Waxed Weathered Block of Iron",
-  "block.rusted_iron.waxed_iron_block": "Waxed Block of Iron",
-  "block.rusted_iron.waxed_cut_iron_block": "Waxed Cut Block of Iron",
-  "block.rusted_iron.waxed_weathered_cut_iron_block": "Waxed Weathered Cut Block of Iron",
-  "block.rusted_iron.waxed_exposed_cut_iron_block": "Waxed Exposed Cut Block of Iron",
+  "block.rusted_iron.weathered_cut_iron_stairs": "Weathered Cut Iron Stairs",
+  "block.rusted_iron.rusted_cut_iron_stairs": "Rusted Cut Iron Stairs",
+
+  "block.rusted_iron.waxed_iron_block": "Waxed Block of Iron",  
+  "block.rusted_iron.waxed_exposed_iron": "Waxed Exposed Iron",
+  "block.rusted_iron.waxed_weathered_iron": "Waxed Weathered Iron",
+  "block.rusted_iron.waxed_rusted_iron": "Waxed Rusted Iron",
+
+  "block.rusted_iron.waxed_cut_iron": "Waxed Cut Iron",
+  "block.rusted_iron.waxed_exposed_cut_iron": "Waxed Exposed Cut Iron",
+  "block.rusted_iron.waxed_weathered_cut_iron": "Waxed Weathered Cut Iron",
+  "block.rusted_iron.waxed_rusted_cut_iron": "Waxed Rusted Cut Iron",
+
+  "block.rusted_iron.waxed_iron_slab": "Waxed Iron Slab",
   "block.rusted_iron.waxed_exposed_iron_slab": "Waxed Exposed Iron Slab",
   "block.rusted_iron.waxed_weathered_iron_slab": "Waxed Weathered Iron Slab",
-  "block.rusted_iron.waxed_iron_slab": "Waxed Iron Slab",
+  "block.rusted_iron.waxed_rusted_iron_slab": "Waxed Rusted Iron Slab",
+  
   "block.rusted_iron.waxed_cut_iron_slab": "Waxed Cut Iron Slab",
-  "block.rusted_iron.waxed_weathered_cut_iron_slab": "Waxed Weathered Cut Iron Slab",
   "block.rusted_iron.waxed_exposed_cut_iron_slab": "Waxed Exposed Cut Iron Slab",
-  "block.rusted_iron.waxed_exposed_iron_stairs": "Waxed Exposed Iron Stairs",
-  "block.rusted_iron.waxed_weathered_iron_stairs": "Waxed Semi_Weathered Iron Stairs",
+  "block.rusted_iron.waxed_weathered_cut_iron_slab": "Waxed Weathered Cut Iron Slab",
+  "block.rusted_iron.waxed_rusted_cut_iron_slab": "Waxed Rusted Cut Iron Slab",
+  
   "block.rusted_iron.waxed_iron_stairs": "Waxed Iron Stairs",
+  "block.rusted_iron.waxed_exposed_iron_stairs": "Waxed Exposed Iron Stairs",
+  "block.rusted_iron.waxed_weathered_iron_stairs": "Waxed Weathered Iron Stairs",
+  "block.rusted_iron.waxed_rusted_iron_stairs": "Waxed Rusted Iron Stairs",
+  
+  
   "block.rusted_iron.waxed_cut_iron_stairs": "Waxed Cut Iron Stairs",
-  "block.rusted_iron.waxed_weathered_cut_iron_stairs": "Waxed Weathered Cut Iron Stairs",
   "block.rusted_iron.waxed_exposed_cut_iron_stairs": "Waxed Exposed Cut Iron Stairs",
-  "block.rusted_iron.rusted_iron_block": "Rusted Block of Iron",
-  "block.rusted_iron.rusted_cut_iron_block": "Rusted Cut Block of Iron",
-  "block.rusted_iron.rusted_iron_slab": "Rusted Iron Slab",
-  "block.rusted_iron.rusted_cut_iron_slab": "Rusted Cut Iron Slab",
-  "block.rusted_iron.rusted_iron_stairs": "Rusted Iron Stairs",
-  "block.rusted_iron.rusted_cut_iron_stairs": "Rusted Cut Iron Stairs"
+  "block.rusted_iron.waxed_weathered_cut_iron_stairs": "Waxed Weathered Cut Iron Stairs",
+  "block.rusted_iron.waxed_rusted_cut_iron_stairs": "Waxed Rusted Cut Iron Stairs"
 }

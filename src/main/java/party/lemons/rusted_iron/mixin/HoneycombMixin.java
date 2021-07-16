@@ -1,22 +1,16 @@
 package party.lemons.rusted_iron.mixin;
 
 import java.util.Optional;
-import java.util.function.Supplier;
-
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import com.google.common.base.Suppliers;
 import com.google.common.collect.BiMap;
-import com.google.common.collect.ImmutableBiMap;
-
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.HoneycombItem;
 import net.minecraft.item.ItemStack;
@@ -36,7 +30,7 @@ public class HoneycombMixin {
 		World world = context.getWorld();
 		BlockPos blockPos = context.getBlockPos();
 		BlockState blockState = world.getBlockState(blockPos);
-		cir.setReturnValue((ActionResult) getWaxedStateIron(blockState).map((state) -> {
+		ActionResult result = (ActionResult) getWaxedStateIron(blockState).map((state) -> {
 			PlayerEntity playerEntity = context.getPlayer();
 			ItemStack itemStack = context.getStack();
 			if (playerEntity instanceof ServerPlayerEntity) {
@@ -47,12 +41,13 @@ public class HoneycombMixin {
 			world.setBlockState(blockPos, state, Block.NOTIFY_ALL | Block.REDRAW_ON_MAIN_THREAD);
 			world.syncWorldEvent(playerEntity, WorldEvents.BLOCK_WAXED, blockPos, 0);
 			return ActionResult.success(world.isClient);
-		}).orElse(ActionResult.PASS));
+		}).orElse(null);
+		if (result != null) cir.setReturnValue(result);
 	}
 
 	@Unique
 	private static Optional<BlockState> getWaxedStateIron(BlockState state) {
-		return Optional.ofNullable((Block) ((BiMap) RustedIron.UNWAXED_TO_WAXED_IRON_BLOCKS.get()).get(state.getBlock()))
+		return Optional.ofNullable((Block) ((BiMap<?, ?>) RustedIron.UNWAXED_TO_WAXED_IRON_BLOCKS.get()).get(state.getBlock()))
 				.map((block) -> {
 					return block.getStateWithProperties(state);
 				});

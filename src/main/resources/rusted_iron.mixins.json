@@ -6,8 +6,9 @@
   "mixins": [
     "AxeMixin",
     "HoneycombMixin",
-    "ReplaceIronBlockMixin",
-    "LightningMixin"
+    "LightningMixin",
+	"InjectIronBlocks",
+	"InjectIronBlockItems"
   ],
   "client": [
 

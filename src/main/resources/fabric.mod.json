@@ -15,6 +15,9 @@
   "entrypoints": {
     "main": [
       "party.lemons.rusted_iron.RustedIron"
+    ],
+    "client": [ 
+      "party.lemons.rusted_iron.RustedIronClient"
     ]
   },
   "mixins": [

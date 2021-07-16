@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "rusted_iron:block/exposed_iron_block"
+      "model": "rusted_iron:block/exposed_iron"
     }
   }
 }

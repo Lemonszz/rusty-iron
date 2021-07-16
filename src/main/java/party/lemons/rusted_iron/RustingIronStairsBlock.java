@@ -3,10 +3,7 @@ package party.lemons.rusted_iron;
 import java.util.Random;
 
 import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Oxidizable;
-import net.minecraft.block.OxidizableStairsBlock;
 import net.minecraft.block.StairsBlock;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;

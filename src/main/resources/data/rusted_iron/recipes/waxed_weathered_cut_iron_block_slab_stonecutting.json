@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "biomemakeover:waxed_weathered_cut_iron_block"
-  },
-  "result": "biomemakeover:waxed_weathered_cut_iron_block_slab",
-  "count": 2
-}

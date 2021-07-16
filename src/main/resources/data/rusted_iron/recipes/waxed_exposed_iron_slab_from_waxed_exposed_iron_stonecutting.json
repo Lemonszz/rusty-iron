@@ -1,8 +1,8 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "biomemakeover:waxed_exposed_iron_block"
+    "item": "rusted_iron:waxed_exposed_iron"
   },
-  "result": "biomemakeover:waxed_exposed_iron_block_slab",
+  "result": "rusted_iron:waxed_exposed_iron_slab",
   "count": 2
 }

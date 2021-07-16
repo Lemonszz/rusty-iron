@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "rusted_iron:weathered_iron_block"
+      "item": "rusted_iron:weathered_iron"
     },
     {
       "item": "minecraft:honeycomb"
     }
   ],
   "result": {
-    "item": "rusted_iron:waxed_weathered_iron_block"
+    "item": "rusted_iron:waxed_weathered_iron"
   }
 }

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "biomemakeover:waxed_iron_block"
-  },
-  "result": "biomemakeover:waxed_iron_block_wall",
-  "count": 1
-}

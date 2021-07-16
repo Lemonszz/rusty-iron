@@ -10,13 +10,10 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.LightningRodBlock;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LightningEntity;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.Vec3i;
 import net.minecraft.world.World;
@@ -78,7 +75,7 @@ public abstract class LightningMixin extends Entity {
 	}
 
 	private static Optional<BlockPos> cleanRustAround(World world, BlockPos pos) {
-		Iterator var2 = BlockPos.iterateRandomly(world.random, 10, pos, 1).iterator();
+		Iterator<BlockPos> var2 = BlockPos.iterateRandomly(world.random, 10, pos, 1).iterator();
 
 		BlockPos blockPos;
 		BlockState blockState;

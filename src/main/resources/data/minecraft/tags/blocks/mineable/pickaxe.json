@@ -1,46 +1,63 @@
 {
   "replace": false,
   "values": [
-    "rusted_iron:weathered_iron",
     "rusted_iron:exposed_iron",
+    "rusted_iron:weathered_iron",
     "rusted_iron:rusted_iron",
+
     "rusted_iron:cut_iron",
-    "rusted_iron:rusted_cut_iron",
+    "rusted_iron:exposed_cut_iron",  
     "rusted_iron:weathered_cut_iron",
-    "rusted_iron:exposed_cut_iron",
+    "rusted_iron:rusted_cut_iron",
+
+    "rusted_iron:waxed_iron_block",
     "rusted_iron:waxed_exposed_iron",
     "rusted_iron:waxed_weathered_iron",
-    "rusted_iron:waxed_iron_block",
+    "rusted_iron:waxed_rusted_iron",
+
     "rusted_iron:waxed_cut_iron",
-    "rusted_iron:waxed_weathered_cut_iron",
     "rusted_iron:waxed_exposed_cut_iron",
+    "rusted_iron:waxed_weathered_cut_iron",
+    "rusted_iron:waxed_rusted_cut_iron",
+
     "rusted_iron:iron_stairs",
-    "rusted_iron:weathered_iron_stairs",
     "rusted_iron:exposed_iron_stairs",
+    "rusted_iron:weathered_iron_stairs",
     "rusted_iron:rusted_iron_stairs",
+
     "rusted_iron:cut_iron_stairs",
-    "rusted_iron:rusted_cut_iron_stairs",
-    "rusted_iron:weathered_cut_iron_stairs",
     "rusted_iron:exposed_cut_iron_stairs",
+    "rusted_iron:weathered_cut_iron_stairs",
+    "rusted_iron:rusted_cut_iron_stairs",
+
+    "rusted_iron:waxed_iron_stairs",
     "rusted_iron:waxed_exposed_iron_stairs",
     "rusted_iron:waxed_weathered_iron_stairs",
-    "rusted_iron:waxed_iron_stairs",
+    "rusted_iron:waxed_rusted_iron_stairs",
+
     "rusted_iron:waxed_cut_iron_stairs",
-    "rusted_iron:waxed_weathered_cut_iron_stairs",
     "rusted_iron:waxed_exposed_cut_iron_stairs",
+    "rusted_iron:waxed_weathered_cut_iron_stairs",
+    "rusted_iron:waxed_rusted_cut_iron_stairs",
+
     "rusted_iron:iron_slab",
-    "rusted_iron:weathered_iron_slab",
     "rusted_iron:exposed_iron_slab",
-    "rusted_iron:rusted_iron_slab",
+    "rusted_iron:weathered_iron_slab",
+	"rusted_iron:rusted_iron_slab",
+
     "rusted_iron:cut_iron_slab",
-    "rusted_iron:rusted_cut_iron_slab",
-    "rusted_iron:weathered_cut_iron_slab",
     "rusted_iron:exposed_cut_iron_slab",
+    "rusted_iron:weathered_cut_iron_slab",
+    "rusted_iron:rusted_cut_iron_slab",
+
+    "rusted_iron:waxed_iron_slab",
     "rusted_iron:waxed_exposed_iron_slab",
     "rusted_iron:waxed_weathered_iron_slab",
-    "rusted_iron:waxed_iron_slab",
+	"rusted_iron:waxed_rusted_iron_slab",
+
     "rusted_iron:waxed_cut_iron_slab",
     "rusted_iron:waxed_weathered_cut_iron_slab",
-    "rusted_iron:waxed_exposed_cut_iron_slab"
+    "rusted_iron:waxed_exposed_cut_iron_slab",
+    "rusted_iron:waxed_rusted_cut_iron_slab"
   ]
 }

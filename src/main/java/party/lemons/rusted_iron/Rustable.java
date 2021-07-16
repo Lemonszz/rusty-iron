@@ -33,19 +33,19 @@ public interface Rustable extends Degradable<Rustable.OxidizationLevel> {
 				.put(RustedIron.EXPOSED_IRON_STAIRS, RustedIron.WEATHERED_IRON_STAIRS)
 				.put(RustedIron.WEATHERED_IRON_STAIRS, RustedIron.RUSTED_IRON_STAIRS).build();
 	});
-	Supplier<BiMap<Block, Block>> OXIDATION_LEVEL_DECREASES = Suppliers.memoize(() -> {
-		return ((BiMap) OXIDATION_LEVEL_INCREASES.get()).inverse();
+	Supplier<BiMap<Object, Object>> OXIDATION_LEVEL_DECREASES = Suppliers.memoize(() -> {
+		return ((BiMap<Object, Object>) OXIDATION_LEVEL_INCREASES.get()).inverse();
 	});
 
 	static Optional<Block> getDecreasedOxidationBlock(Block block) {
-		return Optional.ofNullable((Block) ((BiMap) OXIDATION_LEVEL_DECREASES.get()).get(block));
+		return Optional.ofNullable((Block) ((BiMap<?, ?>) OXIDATION_LEVEL_DECREASES.get()).get(block));
 	}
 
 	static Block getUnaffectedOxidationBlock(Block block) {
 		Block block2 = block;
 
-		for (Block block3 = (Block) ((BiMap) OXIDATION_LEVEL_DECREASES.get())
-				.get(block); block3 != null; block3 = (Block) ((BiMap) OXIDATION_LEVEL_DECREASES.get()).get(block3)) {
+		for (Block block3 = (Block) ((BiMap<?, ?>) OXIDATION_LEVEL_DECREASES.get())
+				.get(block); block3 != null; block3 = (Block) ((BiMap<?, ?>) OXIDATION_LEVEL_DECREASES.get()).get(block3)) {
 			block2 = block3;
 		}
 
@@ -59,7 +59,7 @@ public interface Rustable extends Degradable<Rustable.OxidizationLevel> {
 	}
 
 	static Optional<Block> getIncreasedOxidationBlock(Block block) {
-		return Optional.ofNullable((Block) ((BiMap) OXIDATION_LEVEL_INCREASES.get()).get(block));
+		return Optional.ofNullable((Block) ((BiMap<?, ?>) OXIDATION_LEVEL_INCREASES.get()).get(block));
 	}
 
 	static BlockState getUnaffectedOxidationState(BlockState state) {
@@ -73,11 +73,7 @@ public interface Rustable extends Degradable<Rustable.OxidizationLevel> {
 	}
 
 	default float getDegradationChanceMultiplier() {
-		try {
-			return this.getDegradationLevel() == Rustable.OxidizationLevel.UNAFFECTED ? 0.75F : 1.0F;
-		} catch (AbstractMethodError e) {
-			return 0;
-		}
+		return this.getDegradationLevel() == Rustable.OxidizationLevel.UNAFFECTED ? 1.0F : 1.5F;
 	}
 
 	public static enum OxidizationLevel {
