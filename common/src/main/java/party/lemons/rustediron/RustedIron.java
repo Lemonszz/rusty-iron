@@ -2,15 +2,32 @@ package party.lemons.rustediron;
 
 import com.google.common.collect.BiMap;
 import com.google.common.collect.HashBiMap;
+import dev.architectury.event.EventResult;
+import dev.architectury.event.events.common.InteractionEvent;
 import dev.architectury.registry.registries.DeferredRegister;
+import net.minecraft.advancements.CriteriaTriggers;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.core.Registry;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.AxeItem;
+import net.minecraft.world.item.HoneycombItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
 import party.lemons.rustediron.block.*;
 
+import java.util.Optional;
 import java.util.function.Supplier;
 
 public class RustedIron
@@ -89,6 +106,82 @@ public class RustedIron
 		WAX_GROUP_MAP.put(CUT_IRON_BLOCKS, WAXED_CUT_IRON_BLOCKS);
 		WAX_GROUP_MAP.put(CUT_IRON_BLOCK_SLABS, WAXED_CUT_IRON_BLOCK_SLABS);
 		WAX_GROUP_MAP.put(CUT_IRON_BLOCK_STAIRS, WAXED_CUT_IRON_BLOCK_STAIRS);
+
+		InteractionEvent.RIGHT_CLICK_BLOCK.register(new InteractionEvent.RightClickBlock()
+		{
+			@Override
+			public EventResult click(Player player, InteractionHand hand, BlockPos pos, Direction face)
+			{
+				ItemStack stack = player.getItemInHand(hand);
+				if(!stack.isEmpty() && stack.getItem() instanceof AxeItem)
+					return handleAxe(player.getLevel(), pos, player, hand, stack);
+
+				if(!stack.isEmpty() && stack.getItem() instanceof HoneycombItem)
+					return handleWax(player.getLevel(), pos, player, stack);
+
+
+				return EventResult.pass();
+			}
+
+			public EventResult handleWax(Level level, BlockPos blockPos, Player player, ItemStack itemStack)
+			{
+				BlockState blockState = level.getBlockState(blockPos);
+
+				Optional<BlockState> state = Optional.ofNullable(RustedIron.getWaxMap().get(blockState.getBlock())).map((block) -> block.withPropertiesOf(blockState));
+				InteractionResult result = state.map(bs->{
+					if (player instanceof ServerPlayer) {
+						CriteriaTriggers.ITEM_USED_ON_BLOCK.trigger((ServerPlayer)player, blockPos, itemStack);
+					}
+
+					if(!player.isCreative())
+						itemStack.shrink(1);
+					level.setBlock(blockPos, bs, 11);
+					level.levelEvent(player, LevelEvent.PARTICLES_AND_SOUND_WAX_ON, blockPos, 0);
+					return InteractionResult.sidedSuccess(level.isClientSide);
+				}).orElse(InteractionResult.PASS);
+
+				if(result != InteractionResult.PASS)
+					return EventResult.interruptTrue();
+
+				return EventResult.pass();
+			}
+
+			public EventResult handleAxe(Level level, BlockPos blockPos, Player player, InteractionHand hand, ItemStack itemStack)
+			{
+				BlockState blockState = level.getBlockState(blockPos);
+				Optional<BlockState> rustStrip = WeatheringIron.getPrevious(blockState);
+				Optional<BlockState> rustWaxStrip = Optional.ofNullable(RustedIron.getWaxMapInv().get(blockState.getBlock())).map((block) -> block.withPropertiesOf(blockState));
+
+				Optional<BlockState> result = Optional.empty();
+
+				if(rustWaxStrip.isPresent())
+				{
+					level.playSound(player, blockPos, SoundEvents.AXE_WAX_OFF, SoundSource.BLOCKS, 1.0F, 1.0F);
+					level.levelEvent(player, LevelEvent.PARTICLES_WAX_OFF, blockPos, 0);
+					result = rustWaxStrip;
+				}
+				else if(rustStrip.isPresent())
+				{
+					level.playSound(player, blockPos, SoundEvents.AXE_SCRAPE, SoundSource.BLOCKS, 1.0F, 1.0F);
+					level.levelEvent(player, LevelEvent.PARTICLES_SCRAPE, blockPos, 0);
+					result = rustStrip;
+				}
+
+				if (result.isPresent()) {
+					if (player instanceof ServerPlayer) {
+						CriteriaTriggers.ITEM_USED_ON_BLOCK.trigger((ServerPlayer)player, blockPos, itemStack);
+					}
+
+					level.setBlock(blockPos, result.get(), Block.UPDATE_ALL_IMMEDIATE);
+					if (player != null) {
+						itemStack.hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(hand));
+					}
+					return EventResult.interruptTrue();
+				}
+
+				return EventResult.pass();
+			}
+		});
 	}
 
 	public static BiMap<Block, Block> getWaxMap()

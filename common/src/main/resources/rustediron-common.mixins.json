@@ -5,9 +5,7 @@
   "client": [
   ],
   "mixins": [
-    "BlockMixin",
-    "AxeMixin",
-    "HoneyCombMixin"
+    "BlockMixin"
   ],
   "injectors": {
     "defaultRequire": 1
