@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "rustediron:exposed_iron_block"
+    }
+  },
+  "result": {
+    "item": "rustediron:exposed_iron_stairs",
+    "count": 4
+  }
+}

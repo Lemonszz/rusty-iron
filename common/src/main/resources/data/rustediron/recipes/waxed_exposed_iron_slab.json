@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "rustediron:waxed_exposed_iron_block"
+    }
+  },
+  "result": {
+    "item": "rustediron:waxed_exposed_iron_slab",
+    "count": 6
+  }
+}

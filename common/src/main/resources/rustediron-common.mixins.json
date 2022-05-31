@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "party.lemons.rustediron.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "client": [
+  ],
+  "mixins": [
+    "BlockMixin",
+    "AxeMixin",
+    "HoneyCombMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

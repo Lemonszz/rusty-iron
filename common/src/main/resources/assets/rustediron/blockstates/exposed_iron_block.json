@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "rustediron:block/exposed_iron_block"
+    }
+  }
+}

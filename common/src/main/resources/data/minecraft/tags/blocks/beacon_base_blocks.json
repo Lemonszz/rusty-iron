@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "rustediron:weathered_iron_block",
+    "rustediron:exposed_iron_block",
+    "rustediron:rusted_iron_block",
+    "rustediron:cut_iron_block",
+    "rustediron:rusted_cut_iron_block",
+    "rustediron:weathered_cut_iron_block",
+    "rustediron:exposed_cut_iron_block",
+    "rustediron:waxed_exposed_iron_block",
+    "rustediron:waxed_weathered_iron_block",
+    "rustediron:waxed_iron_block",
+    "rustediron:waxed_cut_iron_block",
+    "rustediron:waxed_weathered_cut_iron_block",
+    "rustediron:waxed_exposed_cut_iron_block"
+  ]
+}

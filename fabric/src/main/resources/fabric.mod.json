@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "rustediron",
+  "version": "${version}",
+  "name": "Rusted Iron",
+  "description": "Makes iron rusty (like copper!)",
+  "authors": [
+    "LASER KNIGHTS"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Lemonszz/rusty-iron",
+    "sources": "https://github.com/Lemonszz/rusty-iron"
+  },
+  "license": "MIT",
+  "icon": "assets/rustediron/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "party.lemons.rustediron.fabric.RustedIronFabric"
+    ]
+  },
+  "mixins": [
+    "rustediron.mixins.json",
+    "rustediron-common.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.18.2",
+    "architectury": ">=4.4.59"
+  }
+}

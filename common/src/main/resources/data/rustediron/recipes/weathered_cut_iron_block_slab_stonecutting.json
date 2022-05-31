@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "rustediron:weathered_cut_iron_block"
+  },
+  "result": "rustediron:weathered_cut_iron_slab",
+  "count": 2
+}

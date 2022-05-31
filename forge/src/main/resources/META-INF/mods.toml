@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[40,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "rustediron"
+version = "${version}"
+displayName = "Rusted Iron"
+authors = "LASER KNIGHTS"
+description = '''
+Makes iron rusty (like copper!)
+'''
+#logoFile = ""
+
+[[dependencies.rustediron]]
+modId = "forge"
+mandatory = true
+versionRange = "[40,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.rustediron]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.18.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.rustediron]]
+modId = "architectury"
+mandatory = true
+versionRange = "[4.4.59,)"
+ordering = "AFTER"
+side = "BOTH"

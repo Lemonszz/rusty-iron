@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "rustediron:block/cut_iron_slab"
+    },
+    "type=double": {
+      "model": "rustediron:block/cut_iron_block"
+    },
+    "type=top": {
+      "model": "rustediron:block/cut_iron_slab_top"
+    }
+  }
+}

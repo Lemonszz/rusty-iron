@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "rustediron:waxed_exposed_iron_block"
+  },
+  "result": "rustediron:waxed_exposed_iron_slab",
+  "count": 2
+}

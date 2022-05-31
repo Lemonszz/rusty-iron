@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "rustediron:exposed_cut_iron_block"
+  },
+  "result": "rustediron:exposed_cut_iron_stairs",
+  "count": 1
+}

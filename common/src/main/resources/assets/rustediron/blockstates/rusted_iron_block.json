@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "rustediron:block/rusted_iron_block"
+    }
+  }
+}

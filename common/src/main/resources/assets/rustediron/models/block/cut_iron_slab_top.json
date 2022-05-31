@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "rustediron:block/cut_iron_block",
+    "top": "rustediron:block/cut_iron_block",
+    "side": "rustediron:block/cut_iron_block"
+  }
+}
