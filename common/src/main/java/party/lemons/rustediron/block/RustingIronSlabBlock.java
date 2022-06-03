@@ -22,7 +22,7 @@ public class RustingIronSlabBlock extends SlabBlock implements WeatheringIron {
 	}
 
 	public boolean isRandomlyTicking(BlockState blockState) {
-		return WeatheringCopper.getNext(blockState.getBlock()).isPresent();
+		return WeatheringIron.getNext(blockState.getBlock()).isPresent();
 	}
 
 	public IronState getAge() {

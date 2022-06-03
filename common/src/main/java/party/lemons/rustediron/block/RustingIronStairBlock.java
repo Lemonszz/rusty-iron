@@ -20,6 +20,7 @@ public class RustingIronStairBlock extends StairBlock implements WeatheringIron 
 		this.onRandomTick(blockState, serverLevel, blockPos, random);
 	}
 
+	@Override
 	public boolean isRandomlyTicking(BlockState blockState) {
 		return WeatheringIron.getNext(blockState.getBlock()).isPresent();
 	}

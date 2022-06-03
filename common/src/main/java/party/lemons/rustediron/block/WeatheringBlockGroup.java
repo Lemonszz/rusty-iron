@@ -69,6 +69,8 @@ public class WeatheringBlockGroup
 		for(int i = 0; i < blocks.size() - 1; i++)
 		{
 			Supplier<Block> next = blocks.get(i + 1);
+
+			System.out.println(Registry.BLOCK.getKey(blocks.get(i).get()));
 			WeatheringIron.NEXT_BY_BLOCK.put(blocks.get(i).get(), next.get());
 		}
 	}
