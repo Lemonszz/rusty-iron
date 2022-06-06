@@ -2,6 +2,7 @@ package party.lemons.rustediron.mixin;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
@@ -23,7 +24,7 @@ public abstract class BlockMixin extends BlockBehaviour
 	}
 
 	@Override
-	public void tick(BlockState blockState, ServerLevel serverLevel, BlockPos blockPos, Random random) {
+	public void tick(BlockState blockState, ServerLevel serverLevel, BlockPos blockPos, RandomSource random) {
 		if(blockState.is(RustedIron.STANDARD_IRON_BLOCK))
 			IronBlockProxy.INSTANCE.onRandomTick(blockState, serverLevel, blockPos, random);
 	}

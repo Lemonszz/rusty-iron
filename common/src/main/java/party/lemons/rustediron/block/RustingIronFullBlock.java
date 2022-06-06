@@ -2,6 +2,7 @@ package party.lemons.rustediron.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 
@@ -16,7 +17,7 @@ public class RustingIronFullBlock extends Block implements WeatheringIron
 		this.weatherState = weatherState;
 	}
 
-	public void randomTick(BlockState blockState, ServerLevel serverLevel, BlockPos blockPos, Random random) {
+	public void randomTick(BlockState blockState, ServerLevel serverLevel, BlockPos blockPos, RandomSource random) {
 		this.onRandomTick(blockState, serverLevel, blockPos, random);
 	}
 
